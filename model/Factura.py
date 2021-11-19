@@ -27,3 +27,9 @@ class Factura:
 
   def asociar_antibiotico(self, antibiotico):
     self.antibiotico = antibiotico
+    
+  def realizar_venta(self, producto_control = None, antibiotico = None):
+    if producto_control != None:
+      self.asociar_producto_control(producto_control)
+    if antibiotico != None:
+      self.asociar_antibiotico(antibiotico)
